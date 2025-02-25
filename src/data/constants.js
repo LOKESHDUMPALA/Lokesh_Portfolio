@@ -288,6 +288,10 @@ export const Bio = {
   - Enabled event organizers to authenticate (sign-in, login), post upcoming events, and view student applications those who are applied.
   - Implemented event filtering by categories and participation dates to enhance user experience and relevance.
 `,
+  demo: {
+    host: { id: "host@gmail.com", pwd: "host" },
+    student: { id: "student@gmail.com", pwd: "student" },
+   },
       image: Techconnect,
       tags: [
         "React",
@@ -314,10 +318,15 @@ export const Bio = {
 - Developed key functionalities like Add to Cart, Checkout, and dynamic Address Management.
 - Implemented  PayPal payment integration to enhance transaction efficiency and user experience.
 `,
+
+demo: {
+  admin: { id: "admin@gmail.com", pwd: "admin" },
+  user: { id: "user@gmail.com", pwd: "user" },
+},  
       image: ECommerce,
       tags: ["React Js", "MongoDB", "Node Js", "Express Js", "Redux-ToolKit","TailwindCSS","Shadcn-UI", "JWT","PayPal-Payment", "PostMan"],
-      github: "https://github.com/LOKESHDUMPALA/Ecommerce",
-      webapp: "https://github.com/LOKESHDUMPALA/Ecommerce",
+      github: "https://github.com/LOKESHDUMPALA/newproj123",
+      webapp: "https://ecommerceeee.onrender.com",
     },
     {
       id: 2,
@@ -329,6 +338,12 @@ export const Bio = {
       - Team Lead: Team Leads are empowered to manage their teams efficiently. They can update their own progress and oversee the progress of each team member, ensuring that the team stays on track and meets its goals.
       - Team Member: Team Members focus on their tasks, regularly update their progress, and report any issues to prevent delays.
       `,
+
+      demo: {
+        admin: { id: "admin@gmail.com", pwd: "admin" },
+        teamLead: { id: "teamlead@gmail.com", pwd: "teamlead" },
+        member: { id: "tm@gmail.com", pwd: "tm" },
+      },
       image: TeamInfo,
       tags: [
         "React Js",
@@ -352,6 +367,7 @@ export const Bio = {
       -Score Calculation & Feedback: Designed functionality to evaluate responses, display scores, and provide users the option to re-attempt the quiz.
       -Dynamic Re-attempts: Implemented random shuffling of questions and options on re-attempts to enhance engagement and challenge.
       `,
+     
       image: Quiz,
       tags: ["React JS", "TailwindCSS", "NodeJS", "Javascript", "Express Js" , "MongoDB" , "Gemini-API"],
       github: "https://github.com/LOKESHDUMPALA/Globus-learn",

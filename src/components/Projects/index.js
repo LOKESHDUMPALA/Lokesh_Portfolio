@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { projects } from '../../data/constants';
-import { FaGithub } from 'react-icons/fa';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { projects } from "../../data/constants";
+import { FaGithub } from "react-icons/fa";
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const ProjectWrapper = styled.div`
   display: flex;
-  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   align-items: center;
   margin: 20px 0;
   width: 100%;
@@ -81,7 +81,7 @@ const Button = styled.a`
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color:#6751b9;
+  background-color: #6751b9;
   color: white;
   border: none;
   border-radius: 5px;
@@ -90,7 +90,7 @@ const Button = styled.a`
   display: inline-block;
 
   &:hover {
-    background-color:rgb(36, 28, 65);
+    background-color: rgb(36, 28, 65);
   }
 `;
 
@@ -103,8 +103,9 @@ const ShowMoreButton = styled.button`
   border: none;
   border-radius: 5px;
   margin: 20px 0;
-  align-self: center; /* Center the button */
+  align-self: center;
 `;
+
 const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
@@ -112,17 +113,49 @@ const Title = styled.h2`
   color: ${({ theme }) => theme.text_primary};
 `;
 
+const DemoContainer = styled.div`
+  margin-top: 10px;
+  padding: 10px;
+  border: 1.5px solid ${({ theme }) => theme.primary};
+  border-radius: 8px;
+  background-color: ${({ theme }) => theme.background_secondary};
+  text-align: center;
+`;
+
+const DemoGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr; /* Stack in a single column for small screens */
+  }
+`;
+
+const DemoBox = styled.div`
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #6751b9;
+  color: white;
+  text-align: center;
+`;
+
+
 const Projects = () => {
   const [showMore, setShowMore] = useState(false);
-
   const visibleProjects = showMore ? projects : projects.slice(0, 3);
 
   return (
     <Container id="projects">
-        <Title>My Projects</Title>
+      <Title>My Projects</Title>
       {visibleProjects.map((project, index) => (
         <ProjectWrapper key={project.id} reverse={index % 2 !== 0}>
-          <ProjectImageLink href={project.github} target="_blank" rel="noopener noreferrer">
+          <ProjectImageLink
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ProjectImage src={project.image} alt={project.title} />
           </ProjectImageLink>
           <ProjectDescription>
@@ -138,14 +171,38 @@ const Projects = () => {
               ))}
             </TechList>
             <Description>{project.description}</Description>
-            <Button href={project.webapp} target="_blank" rel="noopener noreferrer">
+
+            {/* Display Demo Credentials */}
+            {project.demo && (
+  <DemoContainer>
+    <h4>Demo Login:</h4>
+    <DemoGrid>
+      {Object.entries(project.demo).map(([role, creds]) => (
+        <DemoBox key={role}>
+          <strong>{role.charAt(0).toUpperCase() + role.slice(1)}:</strong>
+          <br />
+          email: <code>{creds.id}</code>
+          <br />
+          Password: <code>{creds.pwd}</code>
+        </DemoBox>
+      ))}
+    </DemoGrid>
+  </DemoContainer>
+)}
+
+
+            <Button
+              href={project.webapp}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Website
             </Button>
           </ProjectDescription>
         </ProjectWrapper>
       ))}
       <ShowMoreButton onClick={() => setShowMore(!showMore)}>
-        {showMore ? 'Show Less' : 'Show More'}
+        {showMore ? "Show Less" : "Show More"}
       </ShowMoreButton>
     </Container>
   );
