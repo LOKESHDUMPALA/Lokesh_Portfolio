@@ -202,7 +202,7 @@ export const Bio = {
       role: "Full Stack Developer Intern",
       company: "Eternal Robotics",
       date: "March 2025 - Present 2025",
-      desc: "Developed and enhanced feature-rich dashboards in React to visualize complex datasets from large-scale MySQL databases  ; Handled millions of records in MySQL; optimized SQL queries and indexing strategies, resulting in a 30% improvement in data retrieval performance ; Diagnosed and resolved critical frontend and backend issues; built efficient RESTful APIs using Node.js ; Implemented new features that boosted operational efficiency by 30%, including advanced filtering, search capabilities, and dynamic data views ",
+      desc: "Developed and enhanced feature-rich dashboards in React to visualize complex datasets from large-scale MySQL databases  ;    Handled millions of records in MySQL, optimized SQL queries and indexing strategies, resulting in a 30% improvement in data retrieval performance   ;   Diagnosed and resolved critical frontend and backend issues, built efficient RESTful APIs using Node.js  ;  Implemented new features that boosted operational efficiency by 30%, including advanced filtering, search capabilities, and dynamic data views ",
       skills: [
         "Reactjs",
         "Nodejs",
