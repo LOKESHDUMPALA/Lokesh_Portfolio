@@ -1,5 +1,5 @@
 import Img from "../images/image.png";
-import LetsGrow from "../images/LETSGROW.jpeg"
+import eternal_img from "../images/eternal-robotics-image.png"
 import ITJOBXS from "../images/ITJOBXS.jpeg";
 import INTERNPIXEL from "../images/INTERNPIXEL.jpeg";
 import Victoryscl from "../images/Victoryscl.png";
@@ -198,7 +198,7 @@ export const Bio = {
   export const experiences = [
        {
       id: 0,
-      img: LetsGrow,
+      img: eternal_img,
       role: "Full Stack Developer Intern",
       company: "Eternal Robotics",
       date: "March 2025 - Present 2025",
