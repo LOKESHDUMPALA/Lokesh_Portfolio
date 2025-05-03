@@ -196,8 +196,23 @@ export const Bio = {
   ];
   
   export const experiences = [
-    {
+       {
       id: 0,
+      img: LetsGrow,
+      role: "Full Stack Developer Intern",
+      company: "Eternal Robotics",
+      date: "March 2025 - Present 2025",
+      desc: "Developed and enhanced feature-rich dashboards in React to visualize complex datasets from large-scale MySQL databases  ; Handled millions of records in MySQL; optimized SQL queries and indexing strategies, resulting in a 30% improvement in data retrieval performance ; Diagnosed and resolved critical frontend and backend issues; built efficient RESTful APIs using Node.js ; Implemented new features that boosted operational efficiency by 30%, including advanced filtering, search capabilities, and dynamic data views ",
+      skills: [
+        "Reactjs",
+        "Nodejs",
+        "Expressjs",
+        "MySQL",
+      ],
+      doc: "",
+    },
+    {
+      id: 1,
       img: ITJOBXS,
       role: "Software Development Engineer Intern",
       company: "ITJOBXS",
@@ -216,7 +231,7 @@ export const Bio = {
       doc: "",
     },
     {
-      id: 1,
+      id: 2,
       img: INTERNPIXEL,
       role: "Full Stack Developer Intern",
       company: "INTERNPIXEL",
@@ -233,21 +248,7 @@ export const Bio = {
       ],
       doc:"",
     },
-    {
-      id: 2,
-      img: LetsGrow,
-      role: "Frontend Developer Intern",
-      company: "LetsGrowMore",
-      date: "june 2023 - July 2023",
-      desc: "Built responsive web pages using HTML, CSS, and Bootstrap, ensuring compatibility across devices  ;  Implemented JavaScript for client-side validation to enhance user experience",
-      skills: [
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "JavaScript",
-      ],
-      doc: "",
-    },
+   
   ];
   
   export const education = [
