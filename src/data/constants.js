@@ -21,7 +21,7 @@ export const Bio = {
       "I am a motivated and versatile individual, always eager to take on new challenges.",
     github: "https://github.com/LOKESHDUMPALA",
     resume:
-      "https://drive.google.com/file/d/1gvFSGVrNoBKfLVXCa6x81zxr-njp_hBF/view?usp=sharing",
+      "https://drive.google.com/file/d/1d7k-f5IhQIrp6PK1R7bodN4AKFFeP5Ot/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/lokeswara-rao-dumpala-31708925a/",
     twitter: "https://x.com/DumpalaLok18739?t=YitygsW-moySAotMsFFvxg&s=08",
     insta: "https://www.instagram.com/dumpalalokesh/profilecard/?igsh=MW9sMTZvdDBoZnhrYQ==",
